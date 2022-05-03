@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/background.xml" value="0.117" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/ellipse_2.xml" value="0.117" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/fhnkasdhfk.xml" value="0.147" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/gradient_background.xml" value="0.108" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/ic_launcher_background.xml" value="0.147" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/kooosa.xml" value="0.117" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/main_rectangle.xml" value="0.117" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/rectangle_corner_radius.xml" value="0.117" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/rounded_grey_rectangle.xml" value="0.117" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/rounded_invisible_rectangle.xml" value="0.117" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/rounded_rectangle.xml" value="0.117" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/rounded_white_rectangle.xml" value="0.147" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/activity_home.xml" value="0.1796875" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/activity_main.xml" value="0.165625" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/fragment_forgot_pass.xml" value="0.1796875" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/fragment_home.xml" value="0.1796875" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/fragment_log_in.xml" value="0.1796875" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/fragment_login.xml" value="0.22" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/fragment_register.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/fragment_search.xml" value="0.1644021739130435" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/menu/bottom_nav.xml" value="0.1796875" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/xml/network_security_config.xml" value="0.1644021739130435" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
