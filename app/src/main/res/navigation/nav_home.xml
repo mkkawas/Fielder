@@ -8,7 +8,22 @@
         android:id="@+id/searchFragment"
         android:name="com.example.fielder.login.homepage.SearchFragment"
         android:label="fragment_search"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_settingsFragment2"
+            app:destination="@id/settingsFragment2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_searchFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.fielder.login.homepage.HomeFragment"
@@ -17,6 +32,33 @@
         <action
             android:id="@+id/action_homeFragment_to_searchFragment"
             app:destination="@id/searchFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment2"
+            app:destination="@id/settingsFragment2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment2"
+        android:name="com.example.fielder.login.homepage.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment2_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_settingsFragment2_to_homeFragment"
+            app:destination="@id/homeFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"

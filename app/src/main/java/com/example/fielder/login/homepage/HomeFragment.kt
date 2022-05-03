@@ -12,10 +12,6 @@ class HomeFragment: Fragment(R.layout.fragment_home) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        textview.setOnClickListener{
-            val action = HomeFragmentDirections.actionHomeFragmentToSearchFragment()
-            view.findNavController().navigate(action)
-        }
 
     }
 }
