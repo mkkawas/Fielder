@@ -15,7 +15,7 @@ class HomeFragment: Fragment(R.layout.fragment_home) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        tv_welcome.text = "Welcome "+DataStorage.fname+" "+DataStorage.sname
+        tv_welcome.text = "Welcome "+DataStorage.fname
 
 
     }
