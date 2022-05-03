@@ -23,7 +23,7 @@ class HomeActivity : AppCompatActivity() {
         val navController: NavController =
             Navigation.findNavController(this, R.id.nav_fragment)
         val bottomNavigationView =
-            findViewById<BottomNavigationView>(R.id.bottom_navigatin_view)
+            findViewById<BottomNavigationView>(R.id.bottom_navigation_view)
         setupWithNavController(bottomNavigationView, navController)
 
     }
