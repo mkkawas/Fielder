@@ -9,17 +9,15 @@
     tools:context=".login.homepage.HomeFragment">
 
     <TextView
-        android:id="@+id/textview"
+        android:id="@+id/tv_welcome"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="278dp"
-        android:layout_marginEnd="171dp"
-        android:layout_marginBottom="434dp"
-        android:text="Here is home"
+        android:layout_height="0dp"
+        android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

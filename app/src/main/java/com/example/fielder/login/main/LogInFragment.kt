@@ -1,16 +1,19 @@
 package com.example.fielder.login.main
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
+import android.provider.ContactsContract
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.example.fielder.R
 import com.example.fielder.login.homepage.HomeActivity
+import com.example.fielder.login.models.DataStorage
 import com.example.fielder.login.models.LogInModel
 import com.example.fielder.login.services.RetrofitClient
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_login.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -48,7 +51,12 @@ class LogInFragment: Fragment(R.layout.fragment_login) {
                         val message = response.body()?.message
                         if(error==false){
                             val intent= Intent(context, HomeActivity::class.java)
+                            DataStorage.fname = response.body()!!.user.fname
+                            DataStorage.sname = response.body()!!.user.sname
+                            DataStorage.phonenb = response.body()!!.user.phoneNb
+
                             startActivity(intent)
+
                         }else{
 
                             when(message){
@@ -76,6 +84,9 @@ class LogInFragment: Fragment(R.layout.fragment_login) {
         register.setOnClickListener{
             val action = LogInFragmentDirections.actionLogInFragment2ToRegisterFragment2()
             view.findNavController().navigate(action)
+        }
+        fun saveUser(fname:String, sname: String, phonenb:String){
+
         }
     }
 }

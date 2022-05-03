@@ -6,17 +6,13 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
     app:circularflow_radiusInDP="40"
-    tools:context=".login.homepage.HomeFragment">
+    tools:context=".login.homepage.SearchFragment">
 
     <TextView
         android:id="@+id/textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="278dp"
-        android:layout_marginEnd="171dp"
-        android:layout_marginBottom="434dp"
-        android:text="Here is home"
+        android:text="Here is search"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
