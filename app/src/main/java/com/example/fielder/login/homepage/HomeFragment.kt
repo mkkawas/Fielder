@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.fielder.R
 import com.example.fielder.login.main.LogInFragmentDirections
 import com.example.fielder.login.models.DataStorage
@@ -26,6 +27,10 @@ class HomeFragment: Fragment(R.layout.fragment_home) {
 
         tv_welcome.text = "Welcome "+DataStorage.fname
 
+        val items: ArrayList<>
+
+        rv_suggestions.layoutManager = LinearLayoutManager(context)
+        rv_suggestions.adapter = SuggestionAdapter()
 
 
     }

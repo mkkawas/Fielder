@@ -16,7 +16,7 @@ import com.google.android.gms.location.LocationServices
 
 
 class HomeActivity : AppCompatActivity() {
-    
+
 
     private lateinit var name:String
 
