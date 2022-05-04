@@ -16,8 +16,7 @@ import com.google.android.gms.location.LocationServices
 
 
 class HomeActivity : AppCompatActivity() {
-
-    //lateinit var fusedLocationProviderClient: FusedLocationProviderClient
+    
 
     private lateinit var name:String
 
@@ -26,9 +25,7 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
         supportActionBar?.hide()
 
-     //   fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this)
 
-      //  fetchLocation()
 
 
 
@@ -40,27 +37,6 @@ class HomeActivity : AppCompatActivity() {
         name = intent.getStringExtra("name").toString()
 
     }
-//
-//    private fun fetchLocation() {
-//        val task = fusedLocationProviderClient.lastLocation
-//        if(ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION)
-//            != PackageManager.PERMISSION_GRANTED
-//            && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION)
-//            != PackageManager.PERMISSION_GRANTED )
-//            {
-//
-//            ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.ACCESS_FINE_LOCATION), 101)
-//            return
-//        }
-//        task.addOnSuccessListener {
-//            if(it!=null){
-//                //Toast.makeText(applicationContext, "${it.latitude} ${it.longitude}", Toast.LENGTH_SHORT).show()
-//                DataStorage.city = "lat: ${it.latitude} and long: ${it.longitude}"
-//            }
-//        }
-//
-//
-//    }
 
     fun getName(): String{
         return name
