@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.fielder.R
 import com.example.fielder.login.main.LogInFragmentDirections
 import com.example.fielder.login.models.DataStorage
+import com.example.fielder.login.models.Field
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import kotlinx.android.synthetic.main.fragment_home.*
@@ -27,7 +28,7 @@ class HomeFragment: Fragment(R.layout.fragment_home) {
 
         tv_welcome.text = "Welcome "+DataStorage.fname
 
-        val items: ArrayList<>
+        val items: ArrayList<Field>
 
         rv_suggestions.layoutManager = LinearLayoutManager(context)
         rv_suggestions.adapter = SuggestionAdapter()
