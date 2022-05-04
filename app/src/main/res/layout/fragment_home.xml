@@ -9,34 +9,39 @@
     tools:context=".login.homepage.HomeFragment">
 
     <TextView
-        android:background="@drawable/rounded_invisible_rectangle"
         android:id="@+id/tv_welcome"
-        android:padding="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/rounded_invisible_rectangle"
+        android:padding="10dp"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.04000002" />
+
+
 
     <TextView
         android:id="@+id/tv_suggestions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
         android:background="@drawable/suggestions"
+        android:padding="10dp"
         android:text="Suggestions:"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.176" />
+        app:layout_constraintVertical_bias="0.3" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

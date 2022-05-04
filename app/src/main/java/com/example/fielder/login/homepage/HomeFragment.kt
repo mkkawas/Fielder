@@ -17,7 +17,6 @@ class HomeFragment: Fragment(R.layout.fragment_home) {
 
         tv_welcome.text = "Welcome "+DataStorage.fname
 
-
     }
 
     override fun onCreateView(
