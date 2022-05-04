@@ -50,7 +50,7 @@ class SuggestionAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
                 .load(item.imgSrc)
                 .into(itemView.txt_field_img)
             itemView.txt_name.text = item.name
-            itemView.txt_contact.text = "Contact "+item.contact
+            itemView.txt_contact.text = "Contact: "+item.contact
             itemView.txt_size.text = item.size
             itemView.txt_sport.text = item.sport
 

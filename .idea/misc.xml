@@ -13,6 +13,7 @@
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/ic_home.xml" value="0.1" />
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/ic_launcher_background.xml" value="0.147" />
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/ic_search.xml" value="0.1" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/ic_settings.xml" value="0.1115" />
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/kooosa.xml" value="0.117" />
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/main_rectangle.xml" value="0.117" />
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/rectangle_corner_radius.xml" value="0.117" />
@@ -28,7 +29,7 @@
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/activity_home.xml" value="0.1796875" />
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/activity_main.xml" value="0.165625" />
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/fragment_forgot_pass.xml" value="0.1796875" />
-        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/fragment_home.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/fragment_home.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/fragment_log_in.xml" value="0.1796875" />
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/fragment_login.xml" value="0.22" />
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/fragment_register.xml" value="0.16666666666666666" />

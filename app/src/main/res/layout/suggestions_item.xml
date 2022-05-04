@@ -6,20 +6,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/white"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
 
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="10dp"
-        android:background="@drawable/suggestion_item_box">
+        android:layout_width="379dp"
+        android:layout_height="279dp"
+        android:background="@drawable/suggestion_item_box"
+        android:padding="10dp">
 
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/txt_field_img"
-            android:layout_width="389dp"
-            android:layout_height="182dp"
+            android:layout_width="346dp"
+            android:layout_height="160dp"
 
             android:layout_marginTop="88dp"
             android:background="@drawable/suggestion_item_image"

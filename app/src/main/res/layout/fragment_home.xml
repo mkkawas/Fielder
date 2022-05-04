@@ -8,20 +8,22 @@
     app:circularflow_radiusInDP="40"
     tools:context=".login.homepage.HomeFragment">
 
+
     <TextView
         android:id="@+id/tv_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_invisible_rectangle"
         android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#9DCDD8"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04000002" />
-
+        app:layout_constraintVertical_bias="0.044" />
 
     <TextView
         android:id="@+id/tv_suggestions"
@@ -39,17 +41,18 @@
         app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.214" />
+        app:layout_constraintVertical_bias="0.184" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_suggestions"
-        android:layout_width="409dp"
-        android:layout_height="222dp"
-        android:orientation="horizontal"
+        android:layout_width="411dp"
+        android:layout_height="288dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.458" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

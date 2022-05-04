@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.fielder.R
 import com.example.fielder.login.models.DataStorage
 import com.example.fielder.login.models.Field
@@ -36,7 +37,8 @@ class HomeFragment: Fragment(R.layout.fragment_home) {
     private fun initRecyclerView(){
 
         rv_suggestions.apply {
-            layoutManager = LinearLayoutManager(context)
+            layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
+
             suggestionAdapter = SuggestionAdapter()
             adapter = suggestionAdapter
         }
