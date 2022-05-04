@@ -11,8 +11,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import com.example.fielder.login.models.DataStorage
-import com.google.android.gms.location.FusedLocationProviderClient
-import com.google.android.gms.location.LocationServices
+
 
 
 class HomeActivity : AppCompatActivity() {

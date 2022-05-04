@@ -7,6 +7,7 @@ data class Field(
     val type:String,
     val size:String,
     val contact:String,
-    val location:String
+    val location:String,
+    val imgSrc:String
 
     )

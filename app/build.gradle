@@ -66,8 +66,15 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.9'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
-    //Location Service Google API
-    implementation "com.google.android.gms:play-services-location:17.0.0"
+    //cardview
+    implementation("androidx.cardview:cardview:1.0.0")
+
+    //glide
+    def glide_version = "4.8.0"
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
+
+
 
 
 
