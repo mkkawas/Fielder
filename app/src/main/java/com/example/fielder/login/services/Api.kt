@@ -1,5 +1,6 @@
 package com.example.fielder.login.services
 
+import com.example.fielder.login.models.Fields
 import com.example.fielder.login.models.LogInModel
 import com.example.fielder.login.models.RegisterModel
 
@@ -23,4 +24,7 @@ interface Api {
         @Query("email")email:String,
         @Query("password")password:String
     ):Call<LogInModel>
+
+    @GET("getFields.php")
+    fun getFields(): Call<List<Fields>>
 }

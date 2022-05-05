@@ -7,13 +7,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.fielder.R
-import com.example.fielder.login.models.Field
+import com.example.fielder.login.models.Fields
 import kotlinx.android.synthetic.main.suggestions_item.view.*
 
-class SuggestionAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class SuggestionAdapter(val items: List<Fields>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private val TAG: String = "AppDebug"
-
-    private var items: List<Field> = ArrayList()
+   // private var items: List<Fields> = ArrayList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return ViewHolder(
@@ -30,16 +29,15 @@ class SuggestionAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
         }
     }
-    fun submitList(blogList: List<Field>){
-        items = blogList
-    }
 
     override fun getItemCount() =items.size
 
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 
 
-        fun bind(item: Field){
+        fun bind(item: Fields){
+            val uri = "C:\\xampp\\htdocs\\Fielder\\pics\\"
+            val imageSrc = uri + item.imgSrc
 
             val requestOptions = RequestOptions()
                 .placeholder(R.drawable.ic_launcher_background)
@@ -47,7 +45,7 @@ class SuggestionAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
             Glide.with(itemView.context)
                 .applyDefaultRequestOptions(requestOptions)
-                .load(item.imgSrc)
+                .load(imageSrc)
                 .into(itemView.txt_field_img)
             itemView.txt_name.text = item.name
             itemView.txt_contact.text = "Contact: "+item.contact

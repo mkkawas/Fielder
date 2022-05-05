@@ -1,13 +1,12 @@
 package com.example.fielder.login.models
 
-data class Field(
+data class Fields(
 
     val name:String,
     val sport:String,
-    val type:String,
     val size:String,
     val contact:String,
     val location:String,
+    val city:String,
     val imgSrc:String
-
     )
