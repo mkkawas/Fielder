@@ -27,4 +27,10 @@ interface Api {
 
     @GET("getFields.php")
     fun getFields(): Call<List<Fields>>
+
+    @GET("search.php")
+    fun search(
+        @Query("sport")sport:String,
+        @Query("city")city:String
+    ): Call<List<Fields>>
 }

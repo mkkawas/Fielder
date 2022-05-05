@@ -11,6 +11,24 @@
     tools:layout_editor_absoluteY="182dp">
 
     <TextView
+        android:id="@+id/txt_search"
+        android:layout_width="205dp"
+        android:layout_height="72dp"
+        android:background="@drawable/white_rounded_invisible_rectangle"
+        android:padding="5dp"
+        android:text="Search"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+
+    <TextView
         android:id="@+id/txt_sport"
         android:layout_width="134dp"
         android:layout_height="70dp"
@@ -23,7 +41,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.169" />
@@ -38,12 +56,12 @@
         android:padding="5dp"
         android:textSize="25sp"
 
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txt_city"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintHorizontal_bias="0.304"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.288" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_sport"
+        app:layout_constraintVertical_bias="0.094" />
 
     <TextView
         android:id="@+id/txt_city"
@@ -61,23 +79,22 @@
         app:layout_constraintHorizontal_bias="0.14"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.497" />
-
+        app:layout_constraintVertical_bias="0.499" />
 
     <EditText
         android:id="@+id/et_city"
         android:layout_width="306dp"
         android:layout_height="74dp"
         android:background="@drawable/rounded_grey_rectangle"
-        android:padding="5dp"
         android:hint="eg: Beirut, Saida, Jbeil..."
+        android:padding="5dp"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.371"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.62" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_city"
+        app:layout_constraintVertical_bias="0.07999998" />
 
     <Button
         android:id="@+id/btn_search"
@@ -90,6 +107,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.818" />
+        app:layout_constraintVertical_bias="0.86" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

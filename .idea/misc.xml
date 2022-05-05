@@ -26,6 +26,7 @@
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/suggestion_item_box.xml" value="0.149" />
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/suggestion_item_image.xml" value="0.149" />
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/suggestions.xml" value="0.149" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/drawable/white_rounded_invisible_rectangle.xml" value="0.1115" />
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/activity_home.xml" value="0.1796875" />
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/activity_main.xml" value="0.165625" />
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/fragment_forgot_pass.xml" value="0.1796875" />
@@ -33,7 +34,7 @@
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/fragment_log_in.xml" value="0.1796875" />
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/fragment_login.xml" value="0.22" />
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/fragment_register.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/fragment_search.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/fragment_search.xml" value="0.4466666666666667" />
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/fragment_settings.xml" value="0.1644021739130435" />
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/layout/suggestions_item.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/HES/AndroidStudioProjects/Fielder/app/src/main/res/menu/bottom_nav.xml" value="0.1796875" />
