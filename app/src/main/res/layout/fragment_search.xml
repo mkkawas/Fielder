@@ -6,16 +6,90 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
     app:circularflow_radiusInDP="40"
-    tools:context=".login.homepage.SearchFragment">
+    tools:context=".login.homepage.SearchFragment"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="182dp">
 
     <TextView
-        android:id="@+id/textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Here is search"
+        android:id="@+id/txt_sport"
+        android:layout_width="134dp"
+        android:layout_height="70dp"
+        android:background="@drawable/rounded_white_rectangle"
+        android:padding="5dp"
+        android:text="Sport"
+        android:textAlignment="center"
+        android:textColor="@color/background"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.169" />
+
+
+    <EditText
+        android:id="@+id/et_sport"
+        android:layout_width="306dp"
+        android:layout_height="74dp"
+        android:background="@drawable/rounded_grey_rectangle"
+        android:hint="eg: Football, Basketball..."
+        android:padding="5dp"
+        android:textSize="25sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.288" />
+
+    <TextView
+        android:id="@+id/txt_city"
+        android:layout_width="134dp"
+        android:layout_height="70dp"
+        android:background="@drawable/rounded_white_rectangle"
+        android:padding="5dp"
+        android:text="City"
+        android:textAlignment="center"
+        android:textColor="@color/background"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497" />
+
+
+    <EditText
+        android:id="@+id/et_city"
+        android:layout_width="306dp"
+        android:layout_height="74dp"
+        android:background="@drawable/rounded_grey_rectangle"
+        android:padding="5dp"
+        android:hint="eg: Beirut, Saida, Jbeil..."
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="179dp"
+        android:layout_height="71dp"
+        android:text="Search"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

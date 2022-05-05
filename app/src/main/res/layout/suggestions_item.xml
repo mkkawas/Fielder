@@ -41,7 +41,7 @@
             android:textColor="@color/white"
             android:textSize="28sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/txt_sport"
+            app:layout_constraintBottom_toTopOf="@+id/txt_city"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
@@ -49,7 +49,7 @@
             tools:text="Win Football Academy" />
 
         <TextView
-            android:id="@+id/txt_sport"
+            android:id="@+id/txt_city"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -72,7 +72,7 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/txt_field_img"
             app:layout_constraintEnd_toStartOf="@+id/txt_contact"
-            app:layout_constraintStart_toEndOf="@+id/txt_sport"
+            app:layout_constraintStart_toEndOf="@+id/txt_city"
             app:layout_constraintTop_toBottomOf="@+id/txt_name"
             app:layout_constraintVertical_bias="0.3"
             tools:text="10x10" />
