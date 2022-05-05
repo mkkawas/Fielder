@@ -35,7 +35,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         RetrofitClient.instance.getFields().enqueue( object: Callback<List<Fields>>{
             override fun onResponse(call: Call<List<Fields>>, response: Response<List<Fields>>) {
                 initRecyclerView(response.body()!!)
-                Toast.makeText(context, "success", Toast.LENGTH_SHORT).show()
+               // Toast.makeText(context, "success", Toast.LENGTH_SHORT).show()
             }
 
             override fun onFailure(call: Call<List<Fields>>, t: Throwable) {
