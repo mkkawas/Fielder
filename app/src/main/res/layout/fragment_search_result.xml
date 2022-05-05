@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/rounded_white_rectangle"
     app:circularflow_radiusInDP="40"
-    tools:context=".login.homepage.SearchResultFragment"
+    tools:context=".login.homepage.search.SearchResultFragment"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="182dp">
 
@@ -17,6 +17,7 @@
         android:background="@drawable/main_rectangle"
         android:padding="5dp"
         android:text="Results"
+        android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="50sp"

@@ -1,22 +1,15 @@
-package com.example.fielder.login.homepage
+package com.example.fielder.login.homepage.search
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.fielder.R
 import com.example.fielder.login.models.DataStorage
 import com.example.fielder.login.models.Fields
-import com.example.fielder.login.services.RetrofitClient
-import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_search_result.*
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 class SearchResultFragment: Fragment(R.layout.fragment_search_result) {
 

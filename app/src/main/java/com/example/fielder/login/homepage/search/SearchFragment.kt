@@ -1,6 +1,5 @@
-package com.example.fielder.login.homepage
+package com.example.fielder.login.homepage.search
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,12 +8,9 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.example.fielder.R
-import com.example.fielder.login.main.LogInFragmentDirections
 import com.example.fielder.login.models.DataStorage
 import com.example.fielder.login.models.Fields
-import com.example.fielder.login.models.LogInModel
 import com.example.fielder.login.services.RetrofitClient
-import kotlinx.android.synthetic.main.fragment_login.*
 import kotlinx.android.synthetic.main.fragment_search.*
 import retrofit2.Call
 import retrofit2.Callback

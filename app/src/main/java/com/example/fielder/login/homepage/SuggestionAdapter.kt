@@ -41,7 +41,7 @@ class SuggestionAdapter(val items: List<Fields>) : RecyclerView.Adapter<Recycler
 
          //   val file = File("C:\\xampp\\htdocs\\Fielder\\pics\\win.PNG")
 
-            val imageSrc =  "http://192.168.110.1/Fielder/pics/"
+            val imageSrc =  "http://10.21.128.47/Fielder/pics/"
 
 
 

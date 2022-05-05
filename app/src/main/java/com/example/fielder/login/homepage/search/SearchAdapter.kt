@@ -1,18 +1,16 @@
-package com.example.fielder.login.homepage
+package com.example.fielder.login.homepage.search
 
 import android.content.Intent
 import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.fielder.R
 import com.example.fielder.login.models.Fields
 import kotlinx.android.synthetic.main.search_item.view.*
-import kotlinx.android.synthetic.main.suggestions_item.view.*
 import kotlinx.android.synthetic.main.suggestions_item.view.txt_contact
 import kotlinx.android.synthetic.main.suggestions_item.view.txt_field_img
 import kotlinx.android.synthetic.main.suggestions_item.view.txt_name
@@ -50,7 +48,7 @@ class SearchAdapter(val items: List<Fields>) : RecyclerView.Adapter<RecyclerView
 
             //   val file = File("C:\\xampp\\htdocs\\Fielder\\pics\\win.PNG")
 
-            val imageSrc =  "http://192.168.110.1/Fielder/pics/"
+            val imageSrc =  "http://10.21.128.47/Fielder/pics/"
 
 
 
@@ -61,6 +59,7 @@ class SearchAdapter(val items: List<Fields>) : RecyclerView.Adapter<RecyclerView
             Glide.with(itemView.context)
                 .load(imageSrc+item.image)
                 .into(itemView.txt_field_img)
+
             itemView.txt_name.text = item.name
             itemView.txt_contact.text = "Contact: "+item.contact
             itemView.txt_size.text = item.size

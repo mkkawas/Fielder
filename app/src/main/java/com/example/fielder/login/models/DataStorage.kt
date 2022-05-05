@@ -7,4 +7,11 @@ object DataStorage {
     lateinit var phonenb:String
 
     lateinit var fields: List<Fields>
+
+    fun reset(){
+        fname = ""
+        sname= ""
+        phonenb = ""
+        fields = listOf()
+    }
 }

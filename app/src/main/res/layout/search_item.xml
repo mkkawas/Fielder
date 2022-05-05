@@ -6,14 +6,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="5dp"
+    android:padding="10dp"
     android:background="@color/white"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
 
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="391dp"
+        android:layout_height="192dp"
         android:background="@drawable/suggestion_item_box"
         android:padding="10dp"
         tools:layout_editor_absoluteX="-11dp"
@@ -22,8 +22,8 @@
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/txt_field_img"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="122dp"
+            android:layout_height="122dp"
             android:background="@drawable/ellipse_2"
             android:padding="5dp"
             android:scaleType="centerCrop"
@@ -33,23 +33,22 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.14"
             app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
 
         <TextView
             android:id="@+id/txt_name"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:textSize="25sp"
             android:textStyle="bold"
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/txt_field_img"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.054"
+            app:layout_constraintVertical_bias="0.201"
             tools:text="Win Football Academy" />
 
         <TextView
@@ -61,10 +60,10 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/txt_contact"
             app:layout_constraintEnd_toStartOf="@+id/txt_size"
-            app:layout_constraintHorizontal_bias="0.625"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/txt_field_img"
             app:layout_constraintTop_toBottomOf="@+id/txt_name"
-            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintVertical_bias="0.636"
             tools:text="Football" />
 
         <TextView
@@ -76,10 +75,10 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/txt_contact"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintHorizontal_bias="0.413"
             app:layout_constraintStart_toEndOf="@+id/txt_field_img"
             app:layout_constraintTop_toBottomOf="@+id/txt_name"
-            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintVertical_bias="0.63"
             tools:text="10x10" />
 
         <TextView
@@ -91,10 +90,10 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/location"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.892"
+            app:layout_constraintHorizontal_bias="0.871"
             app:layout_constraintStart_toEndOf="@+id/txt_size"
             app:layout_constraintTop_toBottomOf="@+id/txt_name"
-            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintVertical_bias="0.636"
             tools:text="Beirut" />
 
         <TextView
@@ -106,10 +105,10 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.17"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/txt_field_img"
             app:layout_constraintTop_toBottomOf="@+id/txt_name"
-            app:layout_constraintVertical_bias="0.787"
+            app:layout_constraintVertical_bias="1.0"
             tools:text="Contact: 71206585" />
 
         <ImageView
@@ -118,7 +117,7 @@
             android:layout_height="38dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.764"
+            app:layout_constraintHorizontal_bias="0.644"
             app:layout_constraintStart_toEndOf="@+id/txt_contact"
             app:layout_constraintTop_toBottomOf="@+id/txt_name"
             app:layout_constraintVertical_bias="1.0"
