@@ -13,6 +13,7 @@ import com.example.fielder.login.models.DataStorage
 import com.example.fielder.login.models.Fields
 import com.example.fielder.login.services.RetrofitClient
 import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.fragment_search_result.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -33,7 +34,7 @@ class SearchResultFragment: Fragment(R.layout.fragment_search_result) {
 
     private fun initRecyclerView(fields: List<Fields>) {
 
-        rv_suggestions.apply {
+        searchRecycler.apply {
             layoutManager = LinearLayoutManager(context)
             searchAdapter = SearchAdapter(fields)
             adapter = searchAdapter
