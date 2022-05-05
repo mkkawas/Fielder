@@ -8,5 +8,5 @@ data class Fields(
     val contact:String,
     val location:String,
     val city:String,
-    val imgSrc:String
+    val image:String
     )

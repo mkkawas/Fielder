@@ -1,14 +1,18 @@
 package com.example.fielder.login.homepage
 
+import android.os.Environment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.net.toUri
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.fielder.R
 import com.example.fielder.login.models.Fields
 import kotlinx.android.synthetic.main.suggestions_item.view.*
+import java.io.File
+
 
 class SuggestionAdapter(val items: List<Fields>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private val TAG: String = "AppDebug"
@@ -36,16 +40,18 @@ class SuggestionAdapter(val items: List<Fields>) : RecyclerView.Adapter<Recycler
 
 
         fun bind(item: Fields){
-            val uri = "C:\\xampp\\htdocs\\Fielder\\pics\\"
-            val imageSrc = uri + item.imgSrc
+
+
+         //   val file = File("C:\\xampp\\htdocs\\Fielder\\pics\\win.PNG")
+
+
 
             val requestOptions = RequestOptions()
                 .placeholder(R.drawable.ic_launcher_background)
                 .error(R.drawable.ic_launcher_background)
 
             Glide.with(itemView.context)
-                .applyDefaultRequestOptions(requestOptions)
-                .load(imageSrc)
+                .load(item.image)
                 .into(itemView.txt_field_img)
             itemView.txt_name.text = item.name
             itemView.txt_contact.text = "Contact: "+item.contact
