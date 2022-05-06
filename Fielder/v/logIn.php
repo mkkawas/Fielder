@@ -5,7 +5,7 @@ $response = array();
 $email = $_GET["email"];
 $password = $_GET["password"];
 
-$hashedPassword = password_hash($password, PASSWORD_BCRYPT);
+//$hashedPassword = password_hash($password, PASSWORD_BCRYPT);
 
 $emailQuery = $mysqli->query("SELECT email from users where email='$email'");
 
@@ -15,12 +15,12 @@ if($emailQuery->num_rows>0){
 
     $fetchedPassword = mysqli_fetch_assoc($passwordQuery);
 
-    $hashedPassword = $fetchedPassword["password"];
+    $hashedPassword = $fetchedPassword["password"];//database password
 
 
     if(password_verify($password, $hashedPassword)){
 
-        $user = $mysqli->query("SELECT fname, sname, phoneNb from users where email = '$email'");
+        $user = $mysqli->query("SELECT email,fname, sname, phoneNb from users where email = '$email'");
 
         $response["error"]= false;
         $response["message"]= "user successfully logged in";
