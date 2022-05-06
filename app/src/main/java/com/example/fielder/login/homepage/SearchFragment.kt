@@ -1,4 +1,4 @@
-package com.example.fielder.login.homepage.search
+package com.example.fielder.login.homepage
 
 import android.os.Bundle
 import android.view.LayoutInflater

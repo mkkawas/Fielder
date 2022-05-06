@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fielder.R
+import com.example.fielder.login.homepage.search.SuggestionAdapter
 import com.example.fielder.login.models.DataStorage
 import com.example.fielder.login.models.Fields
 import com.example.fielder.login.services.RetrofitClient

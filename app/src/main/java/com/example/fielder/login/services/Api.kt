@@ -1,5 +1,6 @@
 package com.example.fielder.login.services
 
+import com.example.fielder.login.models.FeedbackModel
 import com.example.fielder.login.models.Fields
 import com.example.fielder.login.models.LogInModel
 import com.example.fielder.login.models.RegisterModel
@@ -33,4 +34,11 @@ interface Api {
         @Query("sport")sport:String,
         @Query("city")city:String
     ): Call<List<Fields>>
+
+    @FormUrlEncoded
+    @POST("sendFeedback.php")
+    fun sendFeedback(
+        @Field("message")message:String,
+        @Field("fullname")fullname:String
+    ): Call<FeedbackModel>
 }

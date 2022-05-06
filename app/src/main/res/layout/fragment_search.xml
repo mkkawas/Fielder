@@ -6,9 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
     app:circularflow_radiusInDP="40"
-    tools:context=".login.homepage.search.SearchFragment"
-    tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="182dp">
+    tools:context=".login.homepage.SearchFragment">
 
     <TextView
         android:id="@+id/txt_search"

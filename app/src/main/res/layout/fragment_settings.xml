@@ -6,9 +6,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
     app:circularflow_radiusInDP="40"
-    tools:context=".login.homepage.settings.SettingsFragment"
-    tools:layout_editor_absoluteX="13dp"
-    tools:layout_editor_absoluteY="3dp">
+    tools:context=".login.homepage.SettingsFragment"
+    >
 
     <TextView
         android:id="@+id/textView"

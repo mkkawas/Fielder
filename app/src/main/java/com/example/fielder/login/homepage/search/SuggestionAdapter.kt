@@ -1,4 +1,4 @@
-package com.example.fielder.login.homepage
+package com.example.fielder.login.homepage.search
 
 import android.view.LayoutInflater
 import android.view.View
@@ -41,7 +41,7 @@ class SuggestionAdapter(val items: List<Fields>) : RecyclerView.Adapter<Recycler
 
          //   val file = File("C:\\xampp\\htdocs\\Fielder\\pics\\win.PNG")
 
-            val imageSrc =  "http://10.21.128.47/Fielder/pics/"
+            val imageSrc =  "http://172.20.10.12/Fielder/pics/"
 
 
 

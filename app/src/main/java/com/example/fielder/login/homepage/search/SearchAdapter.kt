@@ -48,7 +48,7 @@ class SearchAdapter(val items: List<Fields>) : RecyclerView.Adapter<RecyclerView
 
             //   val file = File("C:\\xampp\\htdocs\\Fielder\\pics\\win.PNG")
 
-            val imageSrc =  "http://10.21.128.47/Fielder/pics/"
+            val imageSrc =  "http://172.20.10.12/Fielder/pics/"
 
 
 
