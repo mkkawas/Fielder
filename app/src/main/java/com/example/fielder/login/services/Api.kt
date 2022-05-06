@@ -1,10 +1,7 @@
 package com.example.fielder.login.services
 
 import android.text.Editable
-import com.example.fielder.login.models.FeedbackModel
-import com.example.fielder.login.models.Fields
-import com.example.fielder.login.models.LogInModel
-import com.example.fielder.login.models.RegisterModel
+import com.example.fielder.login.models.*
 
 import retrofit2.Call
 import retrofit2.http.*
@@ -42,4 +39,13 @@ interface Api {
         @Field("message") message: Editable,
         @Field("fullname") fullname:String
     ): Call<FeedbackModel>
+
+
+    @FormUrlEncoded
+    @POST("changePassword.php")
+    fun changePass(
+        @Field("email")email:String,
+        @Field("oldpassword")oldpassword:String,
+        @Field("newpassword")newpassword:String
+    ): Call<ChangePassModel>
 }

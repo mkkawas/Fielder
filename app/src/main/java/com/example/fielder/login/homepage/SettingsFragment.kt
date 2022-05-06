@@ -23,6 +23,8 @@ class SettingsFragment: Fragment(R.layout.fragment_settings){
         }
 
         changePass.setOnClickListener {
+            val action = SettingsFragmentDirections.actionSettingsFragmentToChangePass2()
+            view.findNavController().navigate(action)
 
         }
 
