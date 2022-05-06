@@ -48,4 +48,12 @@ interface Api {
         @Field("oldpassword")oldpassword:String,
         @Field("newpassword")newpassword:String
     ): Call<ChangePassModel>
+
+    @FormUrlEncoded
+    @POST("changePhone.php")
+    fun changePhone(
+        @Field("email")email:String,
+        @Field("oldphone")oldphone:String,
+        @Field("newphone")newphone:String
+    ): Call<ChangePassModel>
 }

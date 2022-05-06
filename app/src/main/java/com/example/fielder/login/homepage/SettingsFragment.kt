@@ -29,6 +29,8 @@ class SettingsFragment: Fragment(R.layout.fragment_settings){
         }
 
         changePhone.setOnClickListener {
+            val action = SettingsFragmentDirections.actionSettingsFragmentToChangePhone2()
+            view.findNavController().navigate(action)
 
         }
 
