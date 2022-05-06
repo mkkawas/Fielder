@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import com.example.fielder.R
 import com.example.fielder.login.models.DataStorage
 import com.example.fielder.login.models.FeedbackModel
@@ -17,14 +18,18 @@ class Feedback : Fragment(R.layout.fragment_feedback) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val message: String = et_feedback.text.toString()
+
 
 
         submit.setOnClickListener {
-            RetrofitClient.instance.sendFeedback(message, DataStorage.fname).enqueue(object :
+            val message = et_feedback.text
+
+            RetrofitClient.instance.sendFeedback(message, DataStorage.email).enqueue(object :
                 Callback<FeedbackModel> {
                 override fun onResponse(call: Call<FeedbackModel>, response: Response<FeedbackModel>) {
                     Toast.makeText(context, "Feedback Sent Successfully", Toast.LENGTH_SHORT).show()
+                    val action = FeedbackDirections.actionFeedback2ToSettingsFragment()
+                    view.findNavController().navigate(action)
 
                 }
 
@@ -37,16 +42,5 @@ class Feedback : Fragment(R.layout.fragment_feedback) {
 
         }
 
-        RetrofitClient.instance.sendFeedback(message, DataStorage.fname).enqueue(object :
-            Callback<FeedbackModel> {
-            override fun onResponse(call: Call<FeedbackModel>, response: Response<FeedbackModel>) {
-
-            }
-
-            override fun onFailure(call: Call<FeedbackModel>, t: Throwable) {
-                Toast.makeText(context, t.message, Toast.LENGTH_SHORT).show()
-            }
-
-        })
     }
 }

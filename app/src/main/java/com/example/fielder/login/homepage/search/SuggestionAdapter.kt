@@ -1,5 +1,7 @@
 package com.example.fielder.login.homepage.search
 
+import android.content.Intent
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -56,6 +58,12 @@ class SuggestionAdapter(val items: List<Fields>) : RecyclerView.Adapter<Recycler
             itemView.txt_contact.text = "Contact: "+item.contact
             itemView.txt_size.text = item.size
             itemView.txt_type.text = item.sport
+
+            itemView.setOnClickListener {
+                val i = Intent(Intent.ACTION_VIEW)
+                i.data = Uri.parse(item.location)
+                it.context.startActivity(i)
+            }
 
         }
 

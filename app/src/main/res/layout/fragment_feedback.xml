@@ -42,8 +42,8 @@
 
     <View
         android:id="@+id/rectangle_1"
-        android:layout_width="370dp"
-        android:layout_height="475dp"
+        android:layout_width="369dp"
+        android:layout_height="289dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:background="@drawable/rectangle_corner_radius"
@@ -63,10 +63,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
         app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
-        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintHorizontal_bias="0.107"
         app:layout_constraintStart_toStartOf="@+id/rectangle_1"
         app:layout_constraintTop_toBottomOf="@+id/ellipse_2"
-        app:layout_constraintVertical_bias="0.099" />
+        app:layout_constraintVertical_bias="0.239" />
 
     <TextView
         android:id="@+id/text3"
@@ -78,23 +78,25 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
         app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
-        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toStartOf="@+id/rectangle_1"
         app:layout_constraintTop_toBottomOf="@+id/ellipse_2"
-        app:layout_constraintVertical_bias="0.179" />
+        app:layout_constraintVertical_bias="0.32999998" />
 
     <EditText
         android:id="@+id/et_feedback"
-        android:layout_width="357dp"
-        android:layout_height="286dp"
+        android:layout_width="330dp"
+        android:layout_height="150dp"
         android:background="@drawable/rounded_grey_rectangle"
         android:padding="7dp"
-        android:textSize="16sp"
+        android:textAlignment="viewStart"
+        android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.647" />
+        app:layout_constraintVertical_bias="0.531" />
 
     <Button
         android:id="@+id/submit"
@@ -105,9 +107,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.894" />
+        app:layout_constraintVertical_bias="0.819" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -54,6 +54,7 @@ class LogInFragment: Fragment(R.layout.fragment_login) {
                             DataStorage.fname = response.body()!!.user.fname
                             DataStorage.sname = response.body()!!.user.sname
                             DataStorage.phonenb = response.body()!!.user.phoneNb
+                            DataStorage.email = response.body()!!.user.email
 
                             startActivity(intent)
 

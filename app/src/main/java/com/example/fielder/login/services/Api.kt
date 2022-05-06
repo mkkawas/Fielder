@@ -1,5 +1,6 @@
 package com.example.fielder.login.services
 
+import android.text.Editable
 import com.example.fielder.login.models.FeedbackModel
 import com.example.fielder.login.models.Fields
 import com.example.fielder.login.models.LogInModel
@@ -38,7 +39,7 @@ interface Api {
     @FormUrlEncoded
     @POST("sendFeedback.php")
     fun sendFeedback(
-        @Field("message")message:String,
-        @Field("fullname")fullname:String
+        @Field("message") message: Editable,
+        @Field("fullname") fullname:String
     ): Call<FeedbackModel>
 }
